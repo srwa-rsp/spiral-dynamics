@@ -3,4 +3,5 @@ export type Stages = {
     name: string;
     color: string;
     description: string;
+    category: string
   };
