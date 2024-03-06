@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #fafafa;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
