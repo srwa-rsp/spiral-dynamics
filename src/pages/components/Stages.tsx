@@ -13,7 +13,7 @@ const Stages: React.FC<Props> = ({ stages }) => {
       <ul>
         {stages.map(stage => (
           <li key={stage.id}>
-            <strong>{stage.name} ({stage.color}):</strong> {stage.description}
+            <strong style={{color: stage.color}}>{stage.name}:</strong> {stage.description}
           </li>
         ))}
       </ul>
