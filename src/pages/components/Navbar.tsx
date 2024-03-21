@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
@@ -18,13 +19,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='bg-black flex justify-between items-center h-16 w-full mx-auto px-4 mb-10 text-white'>
-      <h1 className=' w-fit text-3xl font-bold bg-gradient-to-r from-[#c6ba6a] to-[#57bccc] text-transparent bg-clip-text'>Spiral Dynamics</h1>
+    <div className=' bg-gradient-to-r from-[#f1f1ef] to-[#d6f0f4] flex justify-between items-center h-20 w-full mx-auto px-4 mb-10 text-gray-700'>
+      {/* <h1 className=' w-fit text-3xl font-bold bg-gradient-to-r from-[#c6ba6a] to-[#57bccc] text-transparent bg-clip-text'>Spiral Dynamics</h1> */}
+      <Image width={40} height={40} src={'/logo.png'} alt={''} />
       <ul className='hidden md:flex'>
         {navItems.map(item => (
           <li
             key={item.id}
-            className='px-4 py-2 hover:bg-gradient-to-r from-[#c6ba6a] to-[#57bccc] rounded-xl m-2 cursor-pointer duration-300 hover:text-black whitespace-nowrap'
+            className='px-4 py-2 hover:text-gray-800 hover:font-bold rounded-xl m-2 cursor-pointer duration-300  whitespace-nowrap'
           >
             {item.text}
           </li>
