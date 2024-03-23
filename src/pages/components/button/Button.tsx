@@ -3,8 +3,7 @@ import React from "react";
 
 import clsx from "clsx";
 import { useRouter } from "next/router";
-import Spinner from "../spinner/Spinner";
-
+import Spinner from "../Spinner";
 const classes: any = {
   base: "focus:outline-none transition ease-in-out duration-300 py-4 px-1 text-[1.5rem] font-bold flex justify-center items-center relative focus:ring-2 focus:ring-opacity-50  cursor-pointer",
   disabled: "!opacity-50 !cursor-not-allowed",
