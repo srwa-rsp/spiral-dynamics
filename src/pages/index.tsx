@@ -5,75 +5,49 @@ import Link from "next/link";
 
 export default function Home({ stages }: any) {
   return (
-    <section className="w-full flex  flex-col items-center justify-between px-24 overflow-hidden ">
-      <div className="w-full flex gap-20">
-        <div className="basis-1/4 pt-8">
-          <h2 className="py-6">What is Spiral Dynamics?</h2>
-          <p>
-            Spiral Dynamics is a captivating map of human development that
-            explores the evolving nature of our values, beliefs, and behaviors.
-            Imagine a spiral, where each turn represents a distinct stage of
-            consciousness that humanity progresses through. From basic survival
-            to complex societal structures, and eventually to global
-            interconnectedness, Spiral Dynamics outlines how our perspectives
-            evolve in response to life's challenges.
-          </p>
-          <h2 className="py-6">Why it is important?</h2>
+    <div className="flex flex-col items-center  px-24 overflow-hidden ">
+      <section className="w-full flex  flex-col items-center justify-between">
+        <h1>Your Personal Growth Coach</h1>
 
-          <p>
-            This theory isn't just about individual growth; it's a lens through
-            which we can understand the movements of societies, businesses, and
-            cultures. It reveals why we think and act the way we do, and how our
-            collective viewpoints shift over time. This knowledge not only
-            enhances personal insight and empathy but also aids in navigating
-            complex social dynamics. By grasping the stages of consciousness, we
-            can foster better communication and more harmonious relationships,
-            making Spiral Dynamics a valuable tool for personal and collective
-            development.
-          </p>
-        </div>
-        {/* <Stages stages={stages}/> */}
-        <div className="flex flex-col items-center gap-8">
-          <h1>Spriral Dynamics AI Assistant</h1>
-          <Image
-            className="relative animate-spin-slow duration-[5ms] "
-            src="/spiral.png"
-            alt="spiral"
-            width={500}
-            height={500}
-            priority
-          />
-        </div>
-        <div className="basis-1/4 flex flex-col gap-[12rem] pt-8">
-          <div>
-            <h2 className="py-6">Unveiling Your Worldview</h2>
-            <p>
-              Discover your worldview through the lens of Spiral Dynamics.
-              Uncover the invisible glasses shaping your perception and embark
-              on a unique journey of self-understanding.
-            </p>
-            <h2 className="py-6">Beyond Limitations</h2>
-            <p>
-              Identify the benefits and boundaries of your current perspective.
-              Our AI guides you to envision and reach beyond your present stage.
-            </p>
-            <h2 className="py-6 wh">The Evolution of Consciousness</h2>
-            <p>
-              Witness the unfolding evolution of human consciousness. Our AI
-              illuminates the path, inviting you to join the continuous flow of
-              growth and connection. Embrace the journey to see the world and
-              yourself in a new light.
-            </p>
+        <div className="w-full flex justify-between">
+          {/* <Stages stages={stages}/> */}
+
+          <div className="basis-1/2 flex flex-col gap-[12rem] pt-8">
+            <div>
+              <h2 className="py-6">Unveiling Your Worldview</h2>
+              <p>
+                Discover your worldview through the lens of Spiral Dynamics.
+                Uncover the invisible glasses shaping your perception and embark
+                on a unique journey of self-understanding.
+              </p>
+              <h2 className="py-6">Beyond Limitations</h2>
+              <p>
+                Identify the benefits and boundaries of your current
+                perspective. Our AI guides you to envision and reach beyond your
+                present stage.
+              </p>
+              <h2 className="py-6 wh">The Evolution of Consciousness</h2>
+              <p>
+                Witness the unfolding evolution of human consciousness. Our AI
+                illuminates the path, inviting you to join the continuous flow
+                of growth and connection. Embrace the journey to see the world
+                and yourself in a new light.
+              </p>
+            </div>
           </div>
-          <div className="border-2 border-gray-200 py-8 px-12 flex items-center justify-center rounded-lg cursor-pointer">
-            <Link href={"/"} className=" font-semibold ">
-              Join The Waitlist
-            </Link>
+          <div className="flex flex-col items-center gap-8">
+            <Image
+              className="relative animate-spin-slow duration-[5ms] "
+              src="/spiral.png"
+              alt="spiral"
+              width={500}
+              height={500}
+              priority
+            />
           </div>
         </div>
-      </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+        {/* <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -141,8 +115,41 @@ export default function Home({ stages }: any) {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </section>
+      </div> */}
+      </section>
+      <section className="flex justify-between">
+        <div className="basis-1/2 pt-8">
+          <h2 className="py-6">What is Spiral Dynamics?</h2>
+          <p>
+            Spiral Dynamics is a captivating map of human development that
+            explores the evolving nature of our values, beliefs, and behaviors.
+            Imagine a spiral, where each turn represents a distinct stage of
+            consciousness that humanity progresses through. From basic survival
+            to complex societal structures, and eventually to global
+            interconnectedness, Spiral Dynamics outlines how our perspectives
+            evolve in response to life's challenges.
+          </p>
+          <h2 className="py-6">Why it is important?</h2>
+
+          <p>
+            This theory isn't just about individual growth; it's a lens through
+            which we can understand the movements of societies, businesses, and
+            cultures. It reveals why we think and act the way we do, and how our
+            collective viewpoints shift over time. This knowledge not only
+            enhances personal insight and empathy but also aids in navigating
+            complex social dynamics. By grasping the stages of consciousness, we
+            can foster better communication and more harmonious relationships,
+            making Spiral Dynamics a valuable tool for personal and collective
+            development.
+          </p>
+        </div>
+        <div className="border-2 border-gray-200 py-8 px-12 flex items-center justify-center rounded-lg cursor-pointer">
+          <Link href={"/"} className=" font-semibold ">
+            Join The Waitlist
+          </Link>
+        </div>
+      </section>
+    </div>
   );
 }
 
